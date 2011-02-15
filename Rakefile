@@ -31,6 +31,10 @@ spec = Gem::Specification.new do |s|
         s.bindir = 'bin'
         s.executables = []
         s.has_rdoc = true
+
+        s.add_dependency('derailleur', '>= 0.0.5')
+        s.add_dependency('welo', '>= 0.0.6')
+        s.add_dependency('mime-types', '>= 1.16')
 end
 
 Rake::GemPackageTask.new(spec) do |pkg|

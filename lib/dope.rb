@@ -1,6 +1,6 @@
 
 module Dope
-  VERSION = "0.0.2"
+  VERSION = "0.0.3"
   AUTHORS = ["crapooze"]
   WEBSITE = "https://github.com/crapooze/dope"
   LICENCE = "MIT"
