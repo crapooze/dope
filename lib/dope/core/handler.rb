@@ -71,9 +71,7 @@ module Dope
       raise ResourceNotFound unless resource
       ResourceHandler.new(resource, env, ctx).to_rack_output
     end
-  end
 
-  class ResourceNestingModelHandler < ResourceModelHandler
     def ident
       object[1]
     end
@@ -83,6 +81,9 @@ module Dope
       params.delete(:splat)
       resources.find{|r| r.match_params?(params, ident, prefix)}
     end
+  end
+
+  class ResourceNestingModelHandler < ResourceModelHandler
   end
 
   class ResourceEpithetingModelHandler < ResourceModelHandler
