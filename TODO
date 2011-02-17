@@ -1,16 +1,15 @@
 * specs
 * static file handler
-  - create a class generator instead of current one and only one static approach
-  - better mime-types handling
+  - create a relevant context to be instantiated instead of current single object
 * export resource models 
   - relations: get the data from the relationship:
-      -> currently values to iterate on are passed as parameters
-      -> we could get them from the relationship
-      -> ideally, the model could also be taken internally
-  - epithet
-      -> handler for epithet, current model handler uses match?, we will need to use
-          epithet_resource_match_params?
+    -> currently values to iterate on are passed as parameters
+    -> we could get them from the relationship
+    -> ideally, the model could also be taken internally
 * use perspectives in the handlers
   - possibility to export one resource with a limited number of perspectives?
 * (unlikely) case which may break
-  - multiple nesting of similar resources => risk of parameter namespacing issue?
+  - multiple nesting of similar resources 
+    -> consider it or not?
+* other actions than GET
+* 
