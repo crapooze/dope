@@ -5,11 +5,11 @@
   - relations: get the data from the relationship:
     -> currently values to iterate on are passed as parameters
     -> we could get them from the relationship
-    -> ideally, the model could also be taken internally
+    -> ideally, the model could also be taken internally from the relationship
 * use perspectives in the handlers
   - possibility to export one resource with a limited number of perspectives?
 * (unlikely) case which may break
   - multiple nesting of similar resources 
     -> consider it or not?
-* other actions than GET
-* 
+* other HTTP actions than GET
+* logging
