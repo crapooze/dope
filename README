@@ -1,0 +1,20 @@
+
+= Dope
+
+Dope is a way to publish Welo resources over a Derailleur HTTP server.  Welo
+provides all the path naming logic, and Derailleur provides a fast lookup for
+routes. Dope builds higher level logic on top of these two blocks. In a few
+sentences, Dope provides handlers for Resources. Dope introduces Resources'
+Views. It also gives handlers for static assets.
+
+Nota-Bene: current status is still quite unstable, use with care.
+Any proposal/ideas for improvements will be welcomed.
+
+== Dope::Application
+A Dope::Application is just a Derailleur::Application with more methods to
+export and receive resources. A dope application uses ResourceHandler to handle
+incoming requests.
+
+== Dope::Resource
+A Dope::Resource is just a Welo::Resource with a view.
+
